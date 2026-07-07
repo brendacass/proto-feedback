@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "proto-feedback"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+  "faster-whisper",
+  "anthropic",
+  "openai",
+  "click",
+  "rich",
+]
+
+[project.scripts]
+proto-feedback = "proto_feedback.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["proto_feedback*"]

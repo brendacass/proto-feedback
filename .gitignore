@@ -1,0 +1,29 @@
+# Claude Code
+.claude/
+
+# Environment
+.env
+
+# Generated feedback output
+feedback.json
+screenshots/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Editor/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
